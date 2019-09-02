@@ -48,6 +48,7 @@ body>div {
 #choose {
   min-height: 50vh;
   min-width: 100vw;
+  justify-content: flex-end;
 }
 #warrad, #wroclaw {
   min-height: 50vh;
@@ -89,7 +90,7 @@ body>div {
     min-width: 100vw;
   }
   #warrad, #wroclaw {
-    min-height: 40vh;
+    min-height: 30vh;
     min-width: 100vw;
   }
 }
@@ -102,6 +103,7 @@ h1 {
 img {
   height: 6rem;
   margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 p,a {
