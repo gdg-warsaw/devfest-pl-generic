@@ -84,13 +84,15 @@ body>div {
 @media screen and (max-width: 768px) {
   body {
     flex-direction: column;
+    background-size: 200%;
   }
   #choose {
     min-height: 20vh;
     min-width: 100vw;
+    background-color: var(--white);
   }
   #warrad, #wroclaw {
-    min-height: 30vh;
+    min-height: 35vh;
     min-width: 100vw;
   }
 }
