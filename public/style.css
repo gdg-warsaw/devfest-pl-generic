@@ -64,6 +64,9 @@ body>div {
 #wroclaw {
   background-color: var(--white);
 }
+#wroclaw a, #wroclaw p {
+  color: var(--wroclaw);
+}
 #wroclaw:hover a, #wroclaw:hover p {
   color: var(--wroclaw);
 }
