@@ -1,0 +1,124 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body {
+  color: white;
+  flex-direction: row;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  --opacity: .85;
+  --opacity2: .05;
+  --white: rgba(255,255,255,var(--opacity));
+  --white2: rgba(255,255,255,var(--opacity2));
+  --green: rgba(0, 172, 80, var(--opacity));
+  --green2: rgba(0, 172, 80, var(--opacity2));
+  --yellow: rgb(255, 184, 0, var(--opacity));
+  --yellow2: rgb(255, 184, 0, var(--opacity2));
+  --blue: rgb(0, 135, 248, var(--opacity));
+  --blue2: rgb(0, 135, 248, var(--opacity2));
+  --red: rgb(255, 31, 43, var(--opacity));
+  --red2: rgb(255, 31, 43, var(--opacity2));
+  --wroclaw: rgba(63, 81, 181, var(--opacity));
+  --wroclaw2: rgba(63, 81, 181, var(--opacity2));
+  color: black;
+  background-color: var(--white);
+  background-image: url('devfest-artwork.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+body,body>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+body>div {
+  flex-direction: column;
+}
+#choose {
+  min-height: 50vh;
+  min-width: 100vw;
+}
+#warrad, #wroclaw {
+  min-height: 50vh;
+  min-width: 49.9vw;
+  transition: all .3s;
+}
+#warrad {
+  background-color: var(--white);
+}
+#warrad a, #warrad p {
+  color: var(--blue);
+}
+#wroclaw {
+  background-color: var(--white);
+}
+#wroclaw:hover a, #wroclaw:hover p {
+  color: var(--wroclaw);
+}
+#warrad:hover {
+  background-color: var(--blue);
+}
+#warrad:hover a, #warrad:hover p {
+  color: white;
+}
+#wroclaw:hover {
+  background-color: var(--wroclaw);
+}
+#wroclaw:hover a, #wroclaw:hover p {
+  color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  #choose {
+    min-height: 20vh;
+    min-width: 100vw;
+  }
+  #warrad, #wroclaw {
+    min-height: 40vh;
+    min-width: 100vw;
+  }
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+img {
+  height: 6rem;
+  margin-top: 1rem;
+}
+
+p,a {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+a {
+  font-size: 2rem;
+  transition: all .3s;
+}
+a:hover {
+  color: black;
+}
+
+.bold {
+  font-weight: 600;
+}
